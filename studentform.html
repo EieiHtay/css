@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Form</title>
+	<link rel="stylesheet" type="text/css" href="studentformstyle.css">
+</head>
+<body>
+	<h1>Pseudo Selector Lesson</h1>
+	<h2>Student Form</h2>
+	<form>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" placeholder="Ko Ko"><br><br>
+		<label for="fname">Father Name</label>
+		<input type="text" name="fname" id="fname" placeholder="U Kyaw"><br><br>
+		<label for="phone">Phone</label>
+		<input type="number" name="phone" id="phone" placeholder="09-xxxx"><br><br>
+
+		<label>Date Of Birth</label><br>
+		<select>
+			<option>Day</option>
+		</select>
+		<select>
+			<option>Month</option>
+		</select>
+		<select>
+			<option>Year</option>
+		</select><br><br>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" placeholder="koko@gmail.com"><br><br>
+
+		<label>Gender</label>
+		<input type="radio" name="gender" value="male" id="male"  checked="checked">
+		<label for="male">Male</label>
+		<input type="radio" name="gender" value="female" id="female">
+		<label for="female">Female</label> <br><br>
+
+		<label for="address">Address</label>
+		<textarea id="address"></textarea>
+
+		<label>Qualification</label><br>
+		<input type="checkbox" name="high" value="high" id="high">
+		<label for="high">High School(10th)</label><br>
+
+		<input type="checkbox" name="higher" value="higher" id="higher" disabled="disabled">
+		<label for="higher">Higher School(12th)</label><br>
+
+		<input type="checkbox" name="graduration" value="graduration" id="graduration">
+		<label for="graduration">Graduration(Bachelors)</label><br>
+
+		<input type="checkbox" name="post" value="post" id="post">
+		<label for="post">Post Graduration(Masters)</label><br>
+
+		<input type="checkbox" name="high" id="phd" value="phd">
+		<label for="phd">Phd</label><br><br>
+
+		<fieldset>
+			<legend>Rules:</legend>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+			<ul>
+				<li>This is First Rule</li>
+				<li>This is Second Rule</li>
+				<li>This is Third Rule</li>
+				<li>This is Fourth Rule</li>
+				<li>This is Fifth Rule</li>
+				<li>This is Sixth Rule</li>
+				<li>This is Seventh Rule</li>
+			</ul>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>For Office Use only:</legend>
+			<input type="checkbox" name="approve" value="approve" id="approve">
+			<label for="approve">Approve / Endorse</label><br>
+			<input type="checkbox" name="disapprove" value="disapprove" id="disapprove">
+			<label for="disapprove">Disapprove / Not Endorse</label><br>
+
+			<div class="class_selector">
+				<label for="ename">Employee Name</label>
+				<input type="text" name="ename" id="ename" value="Mr John">
+				<label>Employee Sign</label><br>
+				<img src="sign.png" width="50" height="50"><br>
+
+				<label for="date">Date</label>
+				<input type="text" name="date" id="date" value="8-6-2020">
+			</div>
+		</fieldset>
+		<p>Thank you<p>
+	</form>
+</body>
+</html>

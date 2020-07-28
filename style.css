@@ -1,0 +1,230 @@
+h2{
+	color: tomato;
+}
+*{
+	background-color: silver;
+}
+h1{
+	text-align: center;
+	color: white;
+
+	/*text-shadow: h-shadow v-shadow blur color*/
+	text-shadow: 2px 2px 4px #000000;
+}
+
+/*lesson2*/
+a[title="Google"], a[title="Facebook"]{
+	text-decoration: none;
+	color: green;
+}
+
+#id_selector{
+	word-spacing: 30px;
+}
+
+.class_selector{
+	column-count: 3;
+}
+
+/*Descendant Selector*/
+p a{
+	color: darkred;
+	text-transform: uppercase;
+	text-decoration-style: wavy;
+}
+
+/*Child Selector*/
+p>a{
+	color: purple;
+	text-transform: lowercase;
+	text-decoration-style: double;
+	text-decoration-line: overline;
+}
+a[title="Google"]:hover{
+	background-color: yellow;
+	color: red;
+}
+a[title="Google"]:visited{
+	color: black;
+}
+a[title="Google"]:active{
+	background-color: lime;
+	color: purple;
+}
+
+:target{
+	border: 2px solid #BDBDBD;
+	background-color: #00BCD4;
+}
+
+/*lesson3*/
+.border {
+    border: 1px solid black;
+}
+.marginone{
+	margin: 15px;
+}
+.margintwo{
+	margin: 10px 2%;
+}
+.marginthree{
+	margin: 10px 5px 15px;
+}
+.marginfour{
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	margin-left: 20px; 
+}
+
+/*lesson4*/
+.float_left img{
+	width: 30%;
+	float: left;
+}
+.float_right img{
+	width: 30%;
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+/*lesson5*/
+div.flexOne div,
+div.flexTwo div,
+div.flexThree div,
+div.flexFour div{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	margin: 0 10px;
+	padding: 20px;
+	color: #fff;
+}
+div.flexOne,
+div.flexTwo,
+div.flexThree,
+div.flexFour{
+	display: flex;
+}
+div.flexOne div{
+	flex: 1;
+	/*flex:flex-grow
+	flex-shrink
+	flex-basic*/
+
+	/*flex:1=flex:1 1 0;*/
+}
+
+/*Flex Basic
+  =>length of the flexible item*/
+
+div.flexTwo div:nth-child(3){
+	flex-basis: 100px;
+	/*flex-basis: 100px;=width:100px;*/
+}
+
+/*flex-grow
+	how much item will grow indside the container
+*/
+
+div.flexThree div:nth-child(4){
+	flex-grow: 3;
+}
+
+/*flex-direction
+	direction of flexible item
+*/
+
+div.flexFour{
+	flex-direction: row-reverse;
+	/*
+		row | row-reverse |
+		column | column-reverse
+	*/
+}
+
+/*lesson6*/
+div.gridOne div,
+div.gridTwo div,
+div.gridThree div,
+div.gridFour div,
+div.gridFive div,
+div.gridSix div,
+div.gridSeven div{
+	border: 1px solid #bbb;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+div.gridOne,
+div.gridTwo,
+div.gridThree,
+div.gridFour,
+div.gridFive,
+div.gridSix,
+div.gridSeven{
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+div.gridTwo{
+	grid-column-gap: 50px;
+}
+div.gridThree{
+	grid-row-gap: 50px;
+}
+div.gridFour{
+	grid-gap: 50px 100px;
+			/*row column*/
+}
+div.gridFive div.one{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+div.gridSix div.eight{
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+div.gridSeven div.rowOne{
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+/*lesson7*/
+.element{
+	border: 3px solid #ff7347;
+	font-size: 24px;
+	text-align: center;
+	width: 500px;
+}
+#relative_secondelement{
+	/*relative=> depend on parent*/
+	position: relative;
+	top: 70px;
+	left: 100px;
+}
+#relative_firstelement{
+	/*absolute=>depend on brower*/
+	position: absolute;
+	top: 100px;
+	left: 500px;
+}
+
+div.outer{
+	width: 500px;
+	height: 300px;
+	margin-top: 150px;
+	overflow: scroll;
+}
+
+div#blogOne{
+	position: fixed;
+	top: 400px;
+	left: 250px;
+	background-color: blue;
+	color: #fff;
+	padding: 10px 
+}
